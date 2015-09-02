@@ -39,9 +39,10 @@ ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 endif
 
 override_dh_sphinxdoc:
-	sphinx-build -b html doc debian/python-jsonpath-rw-ext-doc/usr/share/doc/python-jsonpath-rw-ext-doc/html
+ifeq (,$(findstring nodocs, $(DEB_BUILD_OPTIONS)))
+	sphinx-build -b html doc/source debian/python-jsonpath-rw-ext-doc/usr/share/doc/python-jsonpath-rw-ext-doc/html
 	dh_sphinxdoc -O--buildsystem=python_distutils
-
+endif
 
 override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
