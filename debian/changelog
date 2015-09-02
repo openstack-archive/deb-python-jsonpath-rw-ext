@@ -1,0 +1,5 @@
+python-jsonpath-rw-ext (0.1.7-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #797749)
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 02 Sep 2015 10:47:44 +0200
