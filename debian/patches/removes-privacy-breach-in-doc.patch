@@ -1,0 +1,26 @@
+Description: Privacy breach in docs
+ Removes privacy breanch in docs.
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2015-09-02
+
+--- python-jsonpath-rw-ext-0.1.7.orig/README.rst
++++ python-jsonpath-rw-ext-0.1.7/README.rst
+@@ -2,17 +2,6 @@
+ python-jsonpath-rw-ext
+ ===============================
+ 
+-.. image:: https://travis-ci.org/sileht/python-jsonpath-rw-ext.png?branch=master
+-   :target: https://travis-ci.org/sileht/python-jsonpath-rw-ext
+-
+-.. image:: https://img.shields.io/pypi/v/jsonpath-rw-ext.svg
+-   :target: https://pypi.python.org/pypi/jsonpath-rw-ext/
+-   :alt: Latest Version
+-
+-.. image:: https://img.shields.io/pypi/dm/jsonpath-rw-ext.svg
+-   :target: https://pypi.python.org/pypi/jsonpath-rw-ext/
+-   :alt: Downloads
+-
+ Extensions for JSONPath RW
+ 
+ This extensions will be proposed `upstream <https://github.com/kennknowles/python-jsonpath-rw>`__
