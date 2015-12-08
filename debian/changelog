@@ -1,6 +1,7 @@
 python-jsonpath-rw-ext (0.1.9-1) unstable; urgency=medium
 
   * New upstream release.
+  * Fixed min version of jsonpath-rw.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 08 Dec 2015 12:06:56 +0100
 
