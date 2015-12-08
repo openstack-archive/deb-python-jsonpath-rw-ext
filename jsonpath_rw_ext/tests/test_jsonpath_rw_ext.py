@@ -200,6 +200,44 @@ class TestJsonpath_rw_ext(testscenarios.WithScenarios,
                  'value': 17421440000000,
                  'source': 'libvirt.LibvirtDriver'}]}},
             target=[160000])),
+
+        ('real_life_example2', dict(
+            string="payload.(id|(resource.id))",
+            data={'payload': {'id': 'foobar'}},
+            target=['foobar'])),
+        ('real_life_example3', dict(
+            string="payload.id|(resource.id)",
+            data={'payload': {'resource':
+                              {'id': 'foobar'}}},
+            target=['foobar'])),
+        ('real_life_example4', dict(
+            string="payload.id|(resource.id)",
+            data={'payload': {'id': 'yes',
+                              'resource': {'id': 'foobar'}}},
+            target=['yes', 'foobar'])),
+
+        ('sub1', dict(
+            string="payload.`sub(/(foo\\\\d+)\\\\+(\\\\d+bar)/, \\\\2-\\\\1)`",
+            data={'payload': "foo5+3bar"},
+            target=["3bar-foo5"]
+        )),
+        ('sub2', dict(
+            string='payload.`sub(/foo\\\\+bar/, repl)`',
+            data={'payload': "foo+bar"},
+            target=["repl"]
+        )),
+
+        ('split1', dict(
+            string='payload.`split(-, 2, -1)`',
+            data={'payload': "foo-bar-cat-bow"},
+            target=["cat"]
+        )),
+        ('split2', dict(
+            string='payload.`split(-, 2, 2)`',
+            data={'payload': "foo-bar-cat-bow"},
+            target=["cat-bow"]
+        )),
+
     ]
 
     def test_fields_value(self):
