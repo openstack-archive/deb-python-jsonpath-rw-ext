@@ -4,8 +4,10 @@ Author: Thomas Goirand <zigo@debian.org>
 Forwarded: not-needed
 Last-Update: 2015-09-02
 
---- python-jsonpath-rw-ext-0.1.7.orig/README.rst
-+++ python-jsonpath-rw-ext-0.1.7/README.rst
+Index: python-jsonpath-rw-ext/README.rst
+===================================================================
+--- python-jsonpath-rw-ext.orig/README.rst
++++ python-jsonpath-rw-ext/README.rst
 @@ -2,17 +2,6 @@
  python-jsonpath-rw-ext
  ===============================
@@ -23,4 +25,4 @@ Last-Update: 2015-09-02
 -
  Extensions for JSONPath RW
  
- This extensions will be proposed `upstream <https://github.com/kennknowles/python-jsonpath-rw>`__
+ jsonpath-rw-ext extends json-path-rw capabilities by adding multiple extensions.
