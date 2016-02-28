@@ -1,3 +1,9 @@
+python-jsonpath-rw-ext (0.1.9-2) UNRELEASED; urgency=medium
+
+  * Fixed VCS URLs (https).
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:40:00 +0100
+
 python-jsonpath-rw-ext (0.1.9-1) unstable; urgency=medium
 
   * New upstream release.
