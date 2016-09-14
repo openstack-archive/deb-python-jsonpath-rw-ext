@@ -1,4 +1,5 @@
 [gerrit]
 host=review.openstack.org
 port=29418
-project=sileht/python-jsonpath-rw-ext.git
+project=openstack/deb-python-jsonpath-rw-ext.git
+defaultbranch=debian/newton
